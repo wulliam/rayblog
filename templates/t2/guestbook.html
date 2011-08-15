@@ -1,0 +1,74 @@
+<table width="90%"  border="0" align="center" class="bodytext">
+  <tr> 
+    <td width="3%" height="21">&nbsp;</td>
+    <td width="91%">&nbsp;</td>
+    <td width="6%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td class="row1">-&gt;发表一篇留言</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="21">&nbsp;</td>
+    <td><form name="form1" method="post" action="index.php?action=addtogb">
+        <table width="100%" border="0" class="bodytext">
+          <tr> 
+            <td width="26%">你的名字：</td>
+            <td width="74%"><input readonly name="gbname" type="text" id="gbname" value="{cgbname}" size="50" maxlength="60"></td>
+          </tr>
+          <tr> 
+            <td>E-mail：</td>
+            <td><input readonly name="gbmail" type="text" id="gbmail" value="{cgbmail}" size="50" maxlength="60"></td>
+          </tr>
+          <tr> 
+            <td valign="top">个人网站：</td>
+            <td><input readonly  name="gbsite" type="text" id="gbsite" value="http://{cgbsite}" size="50" maxlength="200"></td>
+          </tr>
+          <tr> 
+            <td valign="top">内容：</td>
+            <td><textarea readonly name="gbtext" cols="40" rows="5" id="gbtext"></textarea></td>
+          </tr>
+          <tr> 
+            <td>&nbsp;</td>
+            <td><input type="submit" disable=true name="Submit2" value="就这样了，提交吧"> <input name="remember" type="checkbox" id="remember" value="1" checked>
+              请记住我 </td>
+          </tr>
+        </table>
+      </form></td>
+    <td>&nbsp;</td>
+  </tr>
+  <!-- BEGIN bguestbook -->
+  <tr> 
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="3" style="word-break:break-all" class="blogtitle"> 
+    由{gbname} 发表于{gbdate}</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td style="word-break:break-all">{gbtext}</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td>.{gbname}的电子邮箱地址：{gbmail}</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td colspan="2" >.{gbname}的个人网站：{gbsite}</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td colspan="2">{gbreply}</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><hr noshade></td>
+  </tr>
+  <!-- END bguestbook -->
+</table>

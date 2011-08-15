@@ -1,0 +1,66 @@
+.title {
+	font-family: "Tahoma", "宋体";
+	font-size: 24px;
+	font-weight: bolder;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.text000000 {
+	font-family: "Georgia", "Arial", "sans-serif", "宋体";
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+a:link {
+	text-decoration: none;
+
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+
+}
+.text666666 {
+	font-family: "Georgia", "Arial", "sans-serif", "宋体";
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+.textffffff {
+	font-family: "Georgia", "Arial", "sans-serif", "宋体";
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+textarea {
+	font-family: "Tahoma", "宋体";
+	font-size: 12px;
+	font-weight: bolder;
+	color: #000000;
+	text-decoration: none;
+	border: 1px solid #666666;
+}
+input {
+	font-family: "Tahoma", "宋体";
+	font-size: 12px;
+	font-weight: bolder;
+	color: #000000;
+	border: 1px solid #666666;
+}
+.row1 {
+	border: 1px solid #000000;
+}
+.row2 {
+	border: 1px solid #FFFFFF;
+}
+.row3 {
+	border: #f5f5f5;
+}
+.img{
+	ray:expression(img(this));
+	border: 2px solid #f5f5f5;
+}body {
+	background-color: #CCCCCC;
+}

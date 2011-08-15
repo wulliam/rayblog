@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>无标题文档</title>
+<link href="HTML/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#CCCCCC">
+<table width="538" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="538" height="344" align="center" valign="top" class="bodytext"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="table1">
+        <tr align="center" bgcolor="#666666"> 
+          <td height="23" colspan="3" class="title">选择分类</td>
+        </tr>
+        <tr bgcolor="#f5f5f5"> 
+          <td width="2%">&nbsp;</td>
+          <td width="96%" class="bodytext"><strong>分类名</strong></td>
+          <td width="2%">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#f5f5f5">
+          <td>&nbsp;</td>
+          <td class="bodytext">.<a href="blog.php?action=edit&amp;cid=-1">全部</a></td>
+          <td>&nbsp;</td>
+        </tr>
+        <!-- BEGIN bclist -->
+        <tr bgcolor="#f5f5f5"> 
+          <td>&nbsp;</td>
+          <td class="bodytext">.<a href="blog.php?action=edit&amp;cid={cid}">{cname}</a></td>
+          <td>&nbsp;</td>
+        </tr>
+        <!-- END bclist -->
+        <tr bgcolor="#f5f5f5"> 
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <table width="100%" height="128" border="0" cellpadding="0" cellspacing="0" class="table1">
+        <tr> 
+          <td height="23" colspan="4" align="center" bgcolor="#666666" class="title"><strong>所属分类：{cname2}</strong></td>
+        </tr>
+        <tr bgcolor="#f5f5f5" class="bodytext"> 
+          <td height="16" align="center">&nbsp;</td>
+          <td align="center" bgcolor="#f5f5f5">&nbsp;</td>
+          <td align="center">&nbsp;</td>
+          <td align="center" bgcolor="#f5f5f5">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#f5f5f5" class="bodytext"> 
+          <td height="16" align="center"><strong>文章标题</strong></td>
+          <td align="center" bgcolor="#f5f5f5"><strong>评论</strong></td>
+          <td align="center"><strong>发表时间</strong></td>
+          <td align="center" bgcolor="#f5f5f5"><strong>管理操作</strong></td>
+        </tr>
+        <!-- BEGIN bbloglist -->
+        <tr class="bodytext"> 
+          <td width="51%" height="25" align="left" bgcolor="#f5f5f5">【{title}】</td>
+          <td width="10%" align="center" bgcolor="#f5f5f5">{fb}</td>
+          <td width="13%" align="center" bgcolor="#f5f5f5">{date}</td>
+          <td width="26%" align="center" bgcolor="#f5f5f5"><a href="blog.php?action=modify&bid={bid}">编辑</a> 
+            | <a href="blog.php?action=del&bid={bid}">删除</a> | <a href="feedback.php?bid={bid}">管理评论</a></td>
+        </tr>
+        <tr bgcolor="#f5f5f5"> 
+          <td height="16">&nbsp;</td>
+          <td bgcolor="#f5f5f5">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td bgcolor="#f5f5f5">&nbsp;</td>
+        </tr>
+        <!-- END bbloglist -->
+        <tr align="center" valign="middle" bgcolor="#f5f5f5"> 
+          <td height="16" colspan="4">{putpage}</td>
+        </tr>
+        <tr bgcolor="#f5f5f5"> 
+          <td height="16">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+        
+      
+      <p class="bodytext"><strong>Powered by: R-Blog {ver}</strong></p></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<br> 
+<table width="95%" border="0" align="center">
+  <tr> 
+    <td colspan="3" class="blogtime">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{date}</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td colspan="2" class="blogtitle">{blogtitle}</td>
+  </tr>
+  <tr> 
+    <td width="8%">&nbsp;</td>
+    <td width="88%" class="bodytext"><br>
+      {blogtext}</td>
+    <td width="7%" class="bodytext">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td colspan="2" class="bloginfo">由{bloger}发表于{datetime} | <a href="index.php?action=list&cid={cid2}">{cname}</a> 
+      | <a href="index.php?action=show&bid={bid}">查看</a>({view})次 | <a href="index.php?action=show&bid={bid}#feedback">评论</a>({feedbackcount})篇</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td class="bloginfo"><hr align="left" noshade></td>
+    <td class="bloginfo">&nbsp;</td>
+  </tr>
+  <!-- BEGIN bshowfeedback -->
+  <tr>
+    <td>&nbsp;</td>
+    <td class="bloginfo">&nbsp;</td>
+    <td class="bloginfo">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td class="bloginfo"><strong>#{blogfeedbacktitle} </strong>{blogfeedbacktime} 
+      | {blogfeedbacker}</td>
+    <td class="bloginfo">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td class="bloginfo">{blogfeedbacktext}</td>
+    <td class="bloginfo">&nbsp;</td>
+  </tr>
+  <!-- END bshowfeedback -->
+  <tr> 
+    <td>&nbsp;</td>
+    <td class="bloginfo">&nbsp;</td>
+    <td class="bloginfo">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><a name="feedback"></a></td>
+    <td class="bloginfo">-&gt;发表一篇关于这个主题的新的评论</td>
+    <td class="bloginfo">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td class="bloginfo"><form name="form1" method="post" action="index.php?action=addfeedback&amp;bid={bid}"><table width="100%" border="0" class="bloginfo">
+        <tr> 
+          <td width="23%">标题：</td>
+          <td width="77%"><input name="feedbacktitle" type="text" id="feedbacktitle" value="RE:{blogtitle}" size="50"></td>
+        </tr>
+        <tr> 
+          <td>你的名字：</td>
+          <td><input name="feedbackname" type="text" id="feedbackname" value="{feedbackname}" size="50" maxlength="60"></td>
+        </tr>
+        <tr> 
+          <td>E-mail：</td>
+          <td><input name="feedbackmail" type="text" id="feedbackmail" value="{feedbackmail}" size="50" maxlength="60"></td>
+        </tr>
+        <tr> 
+          <td valign="top">内容：</td>
+          <td><textarea name="feedbacktext" cols="40" rows="5" id="feedbacktext"></textarea></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><input type="submit" name="Submit" value="就这样了，提交吧"> <input name="remember" type="checkbox" id="remember" value="1" checked>
+            请记住我 </td>
+        </tr>
+      </table></form></td>
+    <td class="bloginfo">&nbsp;</td>
+  </tr>
+</table>

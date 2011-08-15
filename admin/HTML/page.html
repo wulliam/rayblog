@@ -1,0 +1,25 @@
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="4" class="bodytext"><hr/></td>
+  </tr>
+  <tr> 
+    <td width="58%" class="bodytext">当前在第{cpage}页，共{allpage}页</td>
+    <td width="15%" class="bodytext">{strPerior}</td>
+    <td width="14%" class="bodytext">{strNext}</td>
+    <td width="13%">
+        <select name="menu1" onChange="MM_jumpMenu('self',this,0)">
+		  <!-- BEGIN bpagejump -->
+          <option value="{v}page={i}" {sel}>{i}</option>
+          <!-- END bpagejump -->
+		</select>
+      </td>
+  </tr>
+</table>

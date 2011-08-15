@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="keywords" content="rays.512j.com,,ray's blog,Blogger,博客,rablog,mysql,游戏,php,王帆">
+<meta name="description" content="Ray's blog,php,blog">
+<link rel="alternate" title="Blog RSS" href="index.php?action=rss2" type="application/rss+xml">
+<title>{title} - POWERED BY R-Blog {ver}</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #CCCCCC;
+}
+.table1 {
+	line-height: 18px;
+	background-color: #FFFFFF;
+	border: 1px solid #f5f5f5;
+	width: 750px;
+	height: 500px;
+}
+.table2 {
+	width: 100%;
+	height: 300px;
+	border: 0px;
+}
+.head {
+	font-family: "Georgia", "Arial", "sans-serif", "宋体";
+	font-size: 18px;
+	font-weight: bolder;
+	color: #FFFFFF;
+	border: none;
+	background-color: #666666;
+}
+.right {
+	background-color: #f5f5f5;
+}
+.table3 {
+	border: 1px solid #000000;
+}
+.description {
+	font-family: "Georgia", "Arial", "sans-serif", "宋体";
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.na {
+	font-family: "Georgia", "Arial", "sans-serif", "宋体";
+	font-size: 12px;
+	color: #000000;
+	line-height: 18px;
+}
+.bodytext {
+	font-family: "Georgia", "Arial", "sans-serif", "宋体";
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+}
+.blogtitle {
+	font-family: "Georgia", "Arial", "sans-serif", "宋体";
+	font-size: 16px;
+	font-weight: bolder;
+	color: #000000;
+	text-decoration: none;
+}
+.blogtime {
+	font-family: "Georgia", "Arial", "sans-serif", "宋体";
+	font-size: 14px;
+	color: #666666;
+	text-decoration: none;
+	font-weight: bolder;
+}
+.bloginfo {
+	font-family: "Georgia", "Arial", "sans-serif", "宋体";
+	font-size: 12px;
+	color: #999999;
+}
+hr {
+	border: 0.1pt solid #f5f5f5;
+}
+a:link {
+	color: #0000CC;
+}
+a:visited {
+	color: #0000CC;
+}
+.underline {
+	color: #0000CC;
+	text-decoration: underline;
+}
+a:hover {
+	color: #000099;
+}
+input {
+	font-family: "Tahoma", "宋体";
+	font-size: 12px;
+	font-weight: bolder;
+	color: #000000;
+	text-decoration: none;
+	border: 1px solid #999999;
+}
+textarea {
+	border: 1px solid #999999;
+	font-family: "Tahoma", "宋体";
+	font-size: 12px;
+	font-weight: bolder;
+	color: #000000;
+	text-decoration: none;
+}
+.ver {
+	font-family: "Tahoma";
+	font-size: 9px;
+	font-weight: bolder;
+	color: #000000;
+}
+.code {
+	font-family: "Tahoma";
+	font-size: 12px;
+	background-color: #f5f5f5;
+	border: 1px solid #000000;
+	font-weight: bold;
+	width: 400px;
+}
+-->
+</style>
+</head>
+<body>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/1.0/">
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+</License>
+</rdf:RDF>
+
+-->
+<table align="center" class="table1">
+  <tr>
+    <td valign="top">
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="table2">
+        <tr> 
+          <td height="91" colspan="2" class="head">
+<table width="705" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr> 
+                <td width="705" height="80"> <p class="head">{blogname} </p>
+                  <p class="description">{description}<br>
+                  </p></td>
+              </tr>
+              <tr>
+                <td height="20" align="right" class="description"><script type="text/javascript"
+                  src="include/scrollup.js"></script>
+                  <script type="text/javascript"
+                  src="include/scroll.js"></script></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr bgcolor="#CCCCCC"> 
+          <td height="18" colspan="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="514" align="center" valign="top">{putblog}<br>
+            {putpage}<br> <strong><font size="1" face="Tahoma, 宋体">Processed 
+            in {putmicrotime} second(s)</font></strong> </td>
+          <td width="186" valign="top" class="right"><form name="form1" method="post" action="index.php?action=search">
+              <table width="197" border="0" cellpadding="0" cellspacing="0">
+                <tr> 
+                  <td width="9" class="na">&nbsp;</td>
+                  <td width="188" class="na">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><strong><img src="templates/t2/img/sidebar_icon.gif" width="22" height="32" alt="">+信息</strong></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">共有日志：{blogcount}</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">共有评论：{commentcount}</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">访问次数：{visitedcount}</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><strong><img src="templates/t2/img/sidebar_icon.gif" width="22" height="32" alt="">+导航</strong></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">.<a href="index.php">首页</a></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">.<a href="index.php?action=about">关于我</a></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">.<a href="index.php?action=guestbook">留言</a></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">.<a href="admin/index.php" target="_blank">管理</a></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><strong><img src="templates/t2/img/sidebar_icon.gif" width="22" height="32" alt="">+分类</strong></td>
+                </tr>
+                <!-- BEGIN b -->
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><a href="index.php?action=list&amp;cid={cid}" class="text000000">{fenlei}</a>({c})</td>
+                </tr>
+                <!-- END b -->
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><strong><img src="templates/t2/img/sidebar_icon.gif" width="22" height="32" alt="">+最新日志</strong></td>
+                </tr>
+                <!-- BEGIN bnewblog -->
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><a href="index.php?action=show&amp;bid={newblogbid}" title="{blank}" class="text000000">{newblog}</a></td>
+                </tr>
+                <!-- END bnewblog -->
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><strong><img src="templates/t2/img/sidebar_icon.gif" width="22" height="32" alt="">+最新评论</strong></td>
+                </tr>
+                <!-- BEGIN bnewfeedback -->
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><a href="index.php?action=show&amp;bid={pl_id}" title="{blank2}" class="text000000">{newfeedback}</a></td>
+                </tr>
+                <!-- END bnewfeedback -->
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><strong><img src="templates/t2/img/sidebar_icon.gif" width="22" height="32" alt="">+搜索</strong></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><input name="str" type="text" id="str" size="10"></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><input type="submit" name="Submit" value="搜所关键字"></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><strong><img src="templates/t2/img/sidebar_icon.gif" width="22" height="32" alt="">+链接</strong></td>
+                </tr>
+                <!-- BEGIN blink -->
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><a href="{url}" target="_blank" class="text000000" title="{de}">{link}</a></td>
+                </tr>
+                <!-- END blink -->
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><strong><img src="templates/t2/img/sidebar_icon.gif" width="22" height="32" alt="">+其它</strong></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><a href="index.php?action=rss2" target="_blank"><img src="templates/t2/img/rss20.jpg" alt="同步" width="80" height="15" border="0"></a></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na"><a href="http://www.creativecommons.cn/licenses/by-nc-sa/1.0/" target="_blank"><img src="templates/t2/img/somerights.gif" alt="gh" width="88" height="31" border="0"></a></td>
+                </tr>
+                <tr>
+                  <td class="na">&nbsp;</td>
+                  <td class="na">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="ver"> &nbsp;POWERED BY <a href="http://rays.512j.com/" target="_blank">R-Blog {ver}</a></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+                  <td class="na">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+				  <td class="na"><script language="javascript" type="text/javascript" src="http://js.users.51.la/847806.js"></script>
+<noscript><a href="http://www.51.la/?847806" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/847806.asp" style="border:none" /></a></noscript></td>
+                </tr>
+                <tr> 
+                  <td class="na">&nbsp;</td>
+				  <td class="na"><script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-3136341-1";
+urchinTracker();
+</script> </td>
+                </tr>
+              </table>
+            </form></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
